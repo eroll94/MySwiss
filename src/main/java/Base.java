@@ -32,4 +32,9 @@ public class Base {
         element.sendKeys(text);
     }
 
+    public void getText(MobileElement element){
+        waitForVisibility(element);
+        element.getText();
+    }
+
 }

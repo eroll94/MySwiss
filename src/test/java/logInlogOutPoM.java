@@ -14,8 +14,9 @@ public class logInlogOutPoM extends TestBase {
         loginPoM = new LoginPoM(driver);
         logoutPoM = new LogoutPoM(driver);
         navButtonsPoM = new NavButtonsPoM(driver);
-        loginPoM.logIn("ccqgseo56.48", "Tester@123");
+//        loginPoM.logIn("ccqgseo56.48", "Tester@123");
         navButtonsPoM.billsBtnClick();
         logoutPoM.logOutMain();
+
     }
 }

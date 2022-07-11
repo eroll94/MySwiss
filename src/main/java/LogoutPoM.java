@@ -12,8 +12,10 @@ public class LogoutPoM extends Base{
         super(driver);
     }
 
-    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"navigation\"])[1]/XCUIElementTypeOther[2]/XCUIElementTypeButton")
+    @iOSXCUITFindBy(xpath = "(//XCUIElementTypeOther[@name=\"navigation\"])[1]/XCUIElementTypeOther/XCUIElementTypeButton")
     MobileElement navigationBtn;
+    //(iOSClassChain = "**/XCUIElementTypeOther[`label == \"navigation\"`][1]/XCUIElementTypeOther/XCUIElementTypeButton")
+
 
     @iOSXCUITFindBy(iOSClassChain = "**/XCUIElementTypeButton[`label == \"Log out\"`]")
     MobileElement logOutBtn;
