@@ -14,7 +14,7 @@ public class Base {
         driver = iosDriver;
     }
     public void waitForVisibility(MobileElement element){
-        WebDriverWait wait = new WebDriverWait(driver, 20);
+        WebDriverWait wait = new WebDriverWait(driver, 30);
         wait.until(ExpectedConditions.visibilityOf(element));
     }
     public void clear(MobileElement element){
