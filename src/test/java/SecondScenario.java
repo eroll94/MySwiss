@@ -41,6 +41,9 @@ public class SecondScenario extends TestBase{
         String invalidCardTakenValueFromApp = invalidCardTakenValue.getText();
         System.out.println("This is taken value from app: " + invalidCardTakenValueFromApp);
         Assert.assertEquals(invalidCard, invalidCardTakenValueFromApp, "compared values are not same");
+        //delete card
+        
+
         //logout
         secondScenarioPoM.arrBack();
         secondScenarioPoM.closePage();
